@@ -1,0 +1,42 @@
+<! DOCTYPTE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta names="viewport" conent="width=device-width,initial-scale=1">
+        <title>Calculate Miles per Gallon</title>
+    </head>
+
+    <body>
+        <h1>Test Score Application</h1>
+        <script>
+            "use strict";
+
+            let total = 0;   //initialize total variable
+
+            //score 1
+            const score1 = parseInt(prompt("Enter test score"));
+            total += score1;
+
+            //score 2
+            const score2 = parseInt(prompt("Enter test score"));
+            total += score2;
+
+            //score3
+            const score3 = parseInt(prompt("Enter test score"));
+            total += score3;
+
+            const average = parseInt(total / 3);
+
+            const html = `<p>Score 1 = ${score1}</p>
+                          <p>Score 2 = ${score2}</p>
+                          <p>Score 3 = ${score3}</p>
+                          <p>Average score = ${average
+                }</p>`
+
+            document.write(html);
+        </script>
+
+    </body>
+
+    </html>

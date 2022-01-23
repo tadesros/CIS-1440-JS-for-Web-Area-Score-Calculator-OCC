@@ -1,0 +1,39 @@
+<! DOCTYPTE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta names="viewport" conent="width=device-width,initial-scale=1">
+        <title>Calculate Area and Perimeter</title>
+    </head>
+
+    <body>
+        <h1>THE AREA AND PERIMETER CALCULATOR</h1>
+        <script>
+            "use strict";
+
+            //get miles driven from user
+            //const miles = parseInt(prompt("Enter miles driven"));
+            let length = Number(prompt("Enter the length")).toFixed(2);
+
+            //get gallons used from user
+            //const gallons = parseInt(prompt("Enter gallons of gas used"));
+            let width = Number(prompt("Enter the width")).toFixed(2);
+
+            //calculate mpg
+            //const mpg = parseFloat(miles / gallons);
+            const perimeter = Number((2 * length) + (2 * width)).toFixed(2);
+
+            const area = Number(length * width).toFixed(2);
+
+            const html = `<p><label>Length: </label>${length}</p>
+                          <p><label>Width: </label>${width}</p>
+                          <p><label>Area: </label>${area}</p>
+                          <p><label>Area: </label>${perimeter}</p>`;
+
+            document.write(html);
+        </script>
+
+    </body>
+
+    </html>
